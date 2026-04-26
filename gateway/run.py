@@ -6899,7 +6899,7 @@ class GatewayRunner:
             has_session_override = session_key in (getattr(self, "_session_reasoning_overrides", {}) or {})
             effort_scope = "session override" if has_session_override else "global config"
 
-            display_scope = "global fallback"
+            display_scope = "global config"
             try:
                 user_config = _load_gateway_config()
                 platform_display_cfg = (
